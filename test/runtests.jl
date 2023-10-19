@@ -2,5 +2,5 @@ using SimpleBoids
 using Test
 
 @testset "SimpleBoids.jl" begin
-    # Write your tests here.
+    @test SimpleBoids.norm([1.,0.],[1.,0.])==0.
 end

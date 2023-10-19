@@ -106,7 +106,7 @@ function initializeRandomBoidState(numboids::Int64,size::Float64)
     return BoidState([[rand(Float64)*size,rand(Float64)*size] for i in 1:numboids],[randomOrientation() for i in 1:numboids])
 end
 
-function run(numboids::Int64,steps::Int64,size::Float64,vel::Float64,paramMaxRad::Float64,paramMinRad::Float64,paramPosWeight::Float64,paramRepWeight::Float64,paramVelWeight::Float64)
+function runBoids(numboids::Int64,steps::Int64,size::Float64,vel::Float64,paramMaxRad::Float64,paramMinRad::Float64,paramPosWeight::Float64,paramRepWeight::Float64,paramVelWeight::Float64)
     out=[initializeRandomBoidState(numboids,size)]
     for i in 1:steps
         push!(out,updateBoidState(out[i],size,vel,paramMaxRad,paramMinRad,paramPosWeight,paramRepWeight,paramVelWeight))
