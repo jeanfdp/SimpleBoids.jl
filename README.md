@@ -23,7 +23,6 @@ using SimpleBoids
 2. Choose your parameters:
 
 ```
-
 numboids=100
 steps=1000
 size=1000.
