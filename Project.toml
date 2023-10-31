@@ -1,7 +1,7 @@
 name = "SimpleBoids"
 uuid = "db6bb4f6-9d2a-4386-a383-884870da1331"
 authors = ["JF Du Plessis"]
-version = "1.0.0-DEV"
+version = "1.0.0"
 
 [compat]
 julia = "1"
