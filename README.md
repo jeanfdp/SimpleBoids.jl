@@ -18,6 +18,11 @@ Once Julia is installed, you can follow these steps to use the package:
 
 ```julia
 using SimpleBoids
+```
+
+2. Choose your parameters:
+
+```
 
 numboids=100
 steps=1000
@@ -28,9 +33,9 @@ paramMinRad=10.
 paramPosWeight=0.04
 paramRepWeight=0.15
 paramVelWeight=0.04
-
-
-
+```
+Run the simulation, and extract the data you want:
+```
 states=SimpleBoids.runBoids(numboids,steps,size,vel,paramMaxRad,paramMinRad,paramPosWeight,paramRepWeight,paramVelWeight)
 positions=[state.positions for state in states]
 ```
